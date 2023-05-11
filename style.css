@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR*/
+
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.a1{
+    text-decoration: none;
+    color:white;
+    display: block;
+    padding: 0 30px;
+    line-height: 50px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.a1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0px;
+    left: 0;
+    
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+
+.ul1{
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+}
+
+.li1{
+    display: inline-block;
+    position: relative;
+}
+
+.a1:hover{
+    background-color:black;
+    color: #FFD700;
+    display: block;
+}
+
+.a1:hover::after{
+    background-color: #FFD700;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.ul2 {
+    position: absolute;
+    background-color: gray;
+    visibility: hidden;
+    color: black;
+}
+
+.li1:hover > .ul2 {
+    visibility: visible; 
+    list-style-type: none;  
+}
+
+/*
+              not working
+
+
+div ul li ul li ul{
+    left: 100px;
+}
+
+
+*/
+
+/* Banner Text */
+
+.bgif{
+    position: absolute;
+    top: 425px;
+    left: 50px;
+    color: white;
+}
+
+/* Learn More */
+.blearn{
+    position: absolute;
+    top: 620px;
+    left: 50px;
+    color: white;
+}
+
+/* underline effect on Learn More */
+
+.learn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.learn:hover{
+    display: block;
+    color: #FFD700;
+}
+
+.learn:hover::after{
+    background-color: #FFD700;
+    transform: scaleX(1);
+    transform-origin: bottom ;
+}
+
+/* Buy Now */
+.buy{
+    position: absolute;
+    top: 607px;
+    line-height: 50px;
+    left: 200px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.by:hover{
+    background-color:rgb(206, 203, 203);
+    border-radius: 25px;
+}
